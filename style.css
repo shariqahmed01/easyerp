@@ -145,7 +145,6 @@ button:hover {
 .showcase .grid {
     overflow: visible;
     grid-template-columns: 50% auto;
-    gap: 30px;
 }
 
 
