@@ -5,6 +5,30 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.floating {
+    width: 100px;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 19px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
 .front-banner {
     text-align: center;
     padding: 30px;
@@ -34,6 +58,9 @@ nav button {
 
 @media screen and (max-width:650px) {
     nav button {
+        display: none !important;
+    }
+    .floating {
         display: none !important;
     }
 }
@@ -110,9 +137,15 @@ nav button {
     /* height: 75vh; */
 }
 
-.second-one img {
-    margin: -60px;
-    width: 100%;
+.second-two {
+    background-color: #92c83e;
+    /* height: 75vh; */
+}
+
+.main-left {
+    width: 90%;
+    padding: 30px;
+    border-radius: 40px;
 }
 
 @media screen and (max-width:1300px) {
@@ -121,15 +154,57 @@ nav button {
     }
 }
 
-.second-two {
-    background-color: #92c83e;
-    /* height: 75vh; */
+.main-right {
+    position: relative;
+    width: 90%;
+    border-radius: 40px;
+    padding: 30px 0;
 }
 
-.second-two img {
-    float: right;
-    position: relative;
-    width: 80%;
+.third {
+    margin: 30px 20px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.third img {
+    padding: 20px;
+}
+
+.fourth h2 {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.fourth p {
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+.fifth h2 {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.fifth p {
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+.sixth h2 {
+    color: white;
+    text-align: left;
+    font-size: 30px;
+}
+
+.sixth p {
+    color: white;
+    text-align: left;
+    font-size: 20px;
 }
 
 .fourth-one {
@@ -206,6 +281,8 @@ nav button {
 .col-image {
     background-size: cover;
     background-position: center center;
+    align-self: center;
+    text-align: center;
 }
 
 @media (max-width: 640px) {
@@ -230,85 +307,6 @@ nav button {
     .Aligner-item {
         width: 90%;
     }
-}
-
-.third {
-    margin: 30px 20px;
-    padding: 15px 0;
-    text-align: center;
-}
-
-.third img {
-    padding: 20px;
-}
-
-.fourth-one img {
-    margin: -60px;
-    width: 100%;
-}
-
-.fourth-two img {
-    float: right;
-    position: relative;
-    width: 80%;
-}
-
-.fourth h2 {
-    color: white;
-    text-align: left;
-    font-size: 20px;
-}
-
-.fourth p {
-    color: white;
-    text-align: left;
-    font-size: 15px;
-}
-
-.fifth-one img {
-    margin: -60px;
-    width: 100%;
-}
-
-.fifth-two img {
-    float: right;
-    position: relative;
-    width: 80%;
-}
-
-.fifth h2 {
-    color: white;
-    text-align: left;
-    font-size: 20px;
-}
-
-.fifth p {
-    color: white;
-    text-align: left;
-    font-size: 15px;
-}
-
-.sixth-one img {
-    margin: -60px;
-    width: 100%;
-}
-
-.sixth-two img {
-    float: right;
-    position: relative;
-    width: 80%;
-}
-
-.sixth h2 {
-    color: white;
-    text-align: left;
-    font-size: 30px;
-}
-
-.sixth p {
-    color: white;
-    text-align: left;
-    font-size: 20px;
 }
 
 figure.snip1192 {
