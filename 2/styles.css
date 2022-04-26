@@ -10,8 +10,30 @@
     padding: 30px;
 }
 
-.front-banner img {
-    padding-top: 50px;
+nav {
+    box-shadow: 0 5px 5px -2px rgb(0 0 0 / 20%);
+}
+
+nav img {
+    padding: 20px;
+    margin: 0 10%;
+}
+
+nav button {
+    float: right;
+    background: #79139a;
+    border: 0;
+    padding: 15px;
+    border-radius: 110px;
+    color: #fff;
+    margin: 25px 10%;
+    font-size: 15px;
+}
+
+@media screen and (max-width:650px) {
+    nav button {
+        display: none !important;
+    }
 }
 
 .front-banner p {
@@ -33,13 +55,15 @@
 }
 
 .group {
-    margin-top: -25px;
+    margin: -50px;
     position: absolute;
-    left: 40%;
+    /* left: 40%; */
+    width: 100%;
 }
 
 .group img {
-    width: 15%;
+    width: 7%;
+    padding: 0 10%;
 }
 
 @media screen and (max-width:600px) {
