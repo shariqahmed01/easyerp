@@ -137,9 +137,9 @@ nav button {
 }
 
 .main-left {
-    width: 90%;
+    width: 80%;
     padding: 30px 0;
-    border-radius: 40px;
+    /* border-radius: 40px; */
 }
 
 @media screen and (max-width:1300px) {
@@ -150,8 +150,8 @@ nav button {
 
 .main-right {
     position: relative;
-    width: 90%;
-    border-radius: 40px;
+    width: 80%;
+    /* border-radius: 40px; */
     padding: 30px 0;
 }
 
