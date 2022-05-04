@@ -161,6 +161,20 @@ nav button {
     text-align: center;
 }
 
+.third span {
+    color: #F48630;
+}
+
+.third button {
+    background: #79139a;
+    border: 0;
+    padding: 15px;
+    border-radius: 110px;
+    color: #fff;
+    margin: 10px 10%;
+    font-size: 15px;
+}
+
 .third img {
     padding: 20px;
 }
