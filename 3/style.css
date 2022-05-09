@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -10,6 +12,16 @@ nav {
 nav img {
     padding: 20px;
     margin: 0 10%;
+}
+
+hr {
+    width: 10%;
+    color: #F96;
+    background-color: #F96;
+    border: 0;
+    height: 5px;
+    border-radius: 5px;
+    margin: auto;
 }
 
 nav button {
@@ -145,78 +157,31 @@ fieldset {
 .details {
     text-align: center;
     padding: 15px;
+    background-color: #EEECDA;
 }
 
 .col-text {
     height: 20em;
 }
 
-.grid-flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-}
-
-.col {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
-
-.col-left {
-    -webkit-box-ordinal-group: -1;
-    -webkit-order: -1;
-    -ms-flex-order: -1;
-    order: -1;
-}
-
-.col-text {
-    display: flex;
+.col-3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
 }
 
-.Aligner-item {
-    width: 60%;
+.col-2 {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    gap: 5%;
 }
 
-.col-image {
-    background-size: cover;
-    background-position: center center;
-}
-
-@media (max-width: 640px) {
-    .grid-flex {
-        height: 40em;
-        display: -webkit-flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-    }
-    .col {
-        order: vertical;
-    }
-    .col-left {
-        -webkit-box-ordinal-group: 0;
-        -webkit-order: 0;
-        -ms-flex-order: 0;
-        order: 0;
-    }
-    .col-text div p {
-        padding: 1em;
-    }
-    .Aligner-item {
-        width: 90%;
-    }
+.col-2 img {
+    width: 80%;
 }
 
 figure.snip1192 {
@@ -227,7 +192,7 @@ figure.snip1192 {
     min-width: 220px;
     max-width: 310px;
     width: 100%;
-    color: #333;
+    color: #fff;
     text-align: left;
     box-shadow: none !important;
 }
@@ -253,7 +218,7 @@ figure.snip1192 blockquote {
     display: block;
     border-radius: 8px;
     position: relative;
-    background-color: #fafafa;
+    background-color: #6F3984;
     padding: 30px 50px 65px 50px;
     font-size: 0.8em;
     font-weight: 500;
@@ -287,7 +252,7 @@ figure.snip1192 .author {
     margin: 0;
     text-transform: uppercase;
     text-align: center;
-    color: #ffffff;
+    color: black;
 }
 
 figure.snip1192 .author h5 {
@@ -305,12 +270,48 @@ figure.snip1192 .author h5 span {
 .grid {
     grid-template-columns: auto auto auto;
     display: grid;
+    justify-items: center;
 }
 
 .testimonials {
     text-align: center;
+    background-color: #EEECDA;
+    padding: 30px 0;
+}
+
+.third {
+    margin: 0 20px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.third button {
+    background: #F96;
+    border: 0;
+    padding: 15px;
+    border-radius: 110px;
+    color: #fff;
+    margin: 25px 10%;
+    font-size: 15px;
+}
+
+.third h1 {
+    font-size: 32px;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.third img {
+    padding: 20px;
 }
 
 footer {
     text-align: center;
+    background-color: #621295;
+    color: #fff;
+    margin: -5px 0;
 }
