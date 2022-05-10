@@ -26,7 +26,7 @@ $(function() {
         .children(".card").length;
     let speed = 1000;
     let containerWidth = $(".container").width();
-    let cardWidth = 250;
+    let cardWidth = 400;
 
     updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
 
