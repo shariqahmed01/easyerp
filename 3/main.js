@@ -18,6 +18,7 @@ function updateSliderArrowsStatus(
         $("#slide-left-container").removeClass("active");
     }
 }
+
 $(function() {
     // Scroll products' slider left/right
     let div = $("#cards-container");
@@ -32,7 +33,7 @@ $(function() {
 
     //Remove scrollbars
     $("#slide-right-container").click(function(e) {
-        if ($(div).scrollLeft() + containerWidth < cardCount * cardWidth) {
+        if ($(div).scrollLeft() + 300 < cardCount * cardWidth) {
             $(div).animate({
                 scrollLeft: $(div).scrollLeft() + cardWidth
             }, {

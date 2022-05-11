@@ -37,17 +37,19 @@ nav button {
 
 .banner img {
     width: 100%;
+    align-self: center;
     /* height: 80vh;
     background-image: url(images/banner.jpg); */
     /* position: relative; */
 }
 
 .container {
-    position: absolute;
+    /* position: absolute; */
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
     right: 5%;
+    align-self: center;
 }
 
 #contact input[type="text"],
@@ -171,6 +173,34 @@ fieldset {
     align-items: center;
 }
 
+@media screen and (max-width:550px) {
+    .col-3 {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav button {
+        display: none !important;
+    }
+    nav {
+        text-align: center;
+    }
+    .col-2 {
+        grid-template-columns: auto !important;
+    }
+    .grid {
+        grid-template-columns: auto !important;
+    }
+    .card {
+        width: 220px !important;
+    }
+}
+
+.col-2 p {
+    padding-bottom: 20px;
+}
+
 .col-2 {
     display: grid;
     grid-template-columns: 50% 40%;
@@ -268,9 +298,11 @@ figure.snip1192 .author h5 span {
 }
 
 .grid {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 50% 50%;
     display: grid;
     justify-items: center;
+    width: 100%;
+    background-color: #D51B40;
 }
 
 .testimonials {
@@ -313,7 +345,6 @@ figure.snip1192 .author h5 span {
 
 .row1 img {
     border: 2px solid #79139a;
-    height: 400px;
 }
 
 .row1 {
@@ -328,7 +359,6 @@ figure.snip1192 .author h5 span {
 
 .row2 img {
     border: 2px solid #79139a;
-    height: 600px;
 }
 
 footer {
