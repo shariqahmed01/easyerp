@@ -195,6 +195,9 @@ fieldset {
     .card {
         width: 220px !important;
     }
+    .img-slider {
+        margin-top: 50px;
+    }
 }
 
 .col-2 p {
@@ -462,6 +465,7 @@ footer {
 }
 
 .float {
+    z-index: 1;
     position: fixed;
     width: 60px;
     height: 60px;
