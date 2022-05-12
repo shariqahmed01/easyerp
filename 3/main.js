@@ -88,3 +88,23 @@ $(function() {
         }
     });
 });
+const photoBank = {
+    0: 'https://cyboardschool.com/images/newbanner0.jpg',
+    1: 'https://cyboardschool.com/images/newbanner1.jpg',
+    2: 'https://cyboardschool.com/images/banner2.jpg',
+    3: 'https://cyboardschool.com/images/banner3.jpg'
+}
+
+let idx = 0;
+
+function switchPic(id, n) {
+    idx += n;
+    if (idx > 3) {
+        idx = 0;
+    }
+    if (idx < 0) {
+        idx = 3;
+    }
+    var newImg = document.getElementById(id).setAttribute('src', photoBank[idx]);
+    return newImg;
+}

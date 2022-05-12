@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.3.1/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.3.1/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
@@ -16,6 +19,9 @@
 </head>
 
 <body>
+    <a href="#" class="float" download>
+        <i class="fa fa-book my-float"></i>
+    </a>
     <nav>
         <img src="images/logo.png" height="50px">
         <button>Contact Us</button>
@@ -47,6 +53,18 @@
             </form>
         </div>
     </div>
+    <div class="img-slider">
+
+
+        <div id="right-arrow" onClick="switchPic('image', 1);">&gt;</div>
+
+        <div id="left-arrow" onClick="switchPic('image', -1);">&lt;</div>
+        <img id="image" src="https://cyboardschool.com/images/newbanner0.jpg">
+
+
+    </div>
+
+
 
     <div class="features">
         <h1>Features</h1>
@@ -295,17 +313,6 @@
     </div>
     <div class="awards">
         <h1>Awards</h1>
-        <div class="col-2 row1">
-            <div>
-                <img src="images/awards1.jpeg" alt="">
-                <p>We have been awarded as the <strong>Best School in Online Learning Practices</strong> by <strong>Elets</strong> in their World Education Summit, 2021.</p>
-            </div>
-            <div>
-                <img src="images/awards2.jpeg" alt="">
-                <p>We have been awarded as the <strong>Mindful Educator of the year</strong> for making a mindful difference in the field of education and school well-being.</p>
-            </div>
-
-        </div>
         <div class="col-2 row2">
 
             <div>
@@ -318,6 +325,18 @@
             </div>
 
         </div>
+        <div class="col-2 row1">
+            <div>
+                <img src="images/awards1.jpeg" alt="">
+                <p>We have been awarded as the <strong>Best School in Online Learning Practices</strong> by <strong>Elets</strong> in their World Education Summit, 2021.</p>
+            </div>
+            <div>
+                <img src="images/awards2.jpeg" alt="">
+                <p>We have been awarded as the <strong>Mindful Educator of the year</strong> for making a mindful difference in the field of education and school well-being.</p>
+            </div>
+
+        </div>
+
     </div>
 
     <footer>
