@@ -202,6 +202,7 @@ fieldset {
 
 .col-2 p {
     padding-bottom: 20px;
+    text-align: justify;
 }
 
 .col-2 {
