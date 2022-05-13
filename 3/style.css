@@ -252,7 +252,7 @@ blockquote {
     border-radius: 8px;
     position: relative;
     /* background-color: #6F3984; */
-    padding: 30px 50px 65px 50px;
+    padding: 30px 10px 65px 10px;
     font-size: 0.8em;
     font-weight: 500;
     margin: 0 0 0;
@@ -271,8 +271,8 @@ blockquote:after {
 }
 
 blockquote:before {
-    top: 35px;
-    left: 20px;
+    top: 15px;
+    left: 0px;
 }
 
 blockquote:after {
@@ -372,98 +372,6 @@ footer {
     padding: 20px;
 }
 
-.container-cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 4px 16px;
-}
-
-#cards-container {
-    overflow: hidden;
-    margin: 20px;
-}
-
-.cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 99999px;
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background: #fff;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    width: 400px;
-    margin: 15px 7.5px;
-}
-
-.card:hover {
-    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-.card .img {
-    max-width: 220px;
-    height: 220px;
-    display: inline-block;
-}
-
-.img-slider {
-    width: 100%;
-    position: relative;
-}
-
-.img-slider img {
-    width: 100%;
-    /* position: absolute; */
-}
-
-#right-arrow {
-    padding: 20px;
-    /* border-radius: 100%;
-    background-color: black; */
-    opacity: 0.6;
-    position: absolute;
-    z-index: 2;
-    margin: 15% 5px;
-    right: 0;
-    color: black;
-    font-weight: 900;
-    text-align: center;
-}
-
-#left-arrow:hover,
-#right-arrow:hover {
-    opacity: 0.75;
-    /* border: 1px solid white; */
-}
-
-#left-arrow {
-    padding: 20px;
-    /* border-radius: 100%;
-    background-color: black; */
-    opacity: 0.6;
-    position: absolute;
-    z-index: 2;
-    margin: 15% 5px;
-    left: 0;
-    color: black;
-    font-weight: 900;
-    text-align: center;
-}
-
 .float {
     z-index: 1;
     position: fixed;
@@ -480,4 +388,148 @@ footer {
 
 .my-float {
     margin-top: 22px;
+}
+
+.img-slider {
+    width: 100%;
+    position: relative;
+}
+
+.img-slider img {
+    width: 100%;
+    /* position: absolute; */
+}
+
+.wrapper {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.carousel {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev,
+.slick-next {
+    /* background: #000; */
+    border-radius: 15px;
+    border-color: transparent;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #79139a;
+}
+
+.card {
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 15px #ccc;
+}
+
+.card-body {
+    background: #fff;
+    width: 100%;
+    vertical-align: top;
+}
+
+.card-content {
+    text-align: left;
+    color: #333;
+    padding: 15px;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-title p {
+    font-size: 12px;
+}
+
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.jssorb031 {
+    position: absolute;
+}
+
+.jssorb031 .i {
+    position: absolute;
+    cursor: pointer;
+}
+
+.jssorb031 .i .b {
+    fill: #000;
+    fill-opacity: 0.5;
+    stroke: #fff;
+    stroke-width: 1200;
+    stroke-miterlimit: 10;
+    stroke-opacity: 0.3;
+}
+
+.jssorb031 .i:hover .b {
+    fill: #fff;
+    fill-opacity: .7;
+    stroke: #000;
+    stroke-opacity: .5;
+}
+
+.jssorb031 .iav .b {
+    fill: #fff;
+    stroke: #000;
+    fill-opacity: 1;
+}
+
+.jssorb031 .i.idn {
+    opacity: .3;
+}
+
+.jssora051 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.jssora051 .a {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 360;
+    stroke-miterlimit: 10;
+}
+
+.jssora051:hover {
+    opacity: .8;
+}
+
+.jssora051.jssora051dn {
+    opacity: .5;
+}
+
+.jssora051.jssora051ds {
+    opacity: .3;
+    pointer-events: none;
 }
