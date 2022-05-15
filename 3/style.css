@@ -195,8 +195,11 @@ fieldset {
     .card {
         width: 220px !important;
     }
-    .img-slider {
-        margin-top: 50px;
+    .admission {
+        grid-template-columns: auto !important;
+    }
+    .footer-1 {
+        grid-template-columns: auto !important;
     }
 }
 
@@ -368,10 +371,46 @@ figure.snip1192 .author h5 span {
 
 footer {
     text-align: center;
-    background-color: #621295;
-    color: #fff;
+    background-color: #fafafa;
+    color: black;
     margin: -5px 0;
+    padding: 20px 0;
+}
+
+.footer-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+footer img {
     padding: 20px;
+    margin: 0 10%;
+    height: 50px;
+}
+
+.footer hr {
+    width: 100%;
+    background-color: grey;
+    border: 0;
+    height: 0.5px;
+    margin: 10px 0;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.social i {
+    color: #7d7d93;
+    padding: 20px;
+}
+
+.social {
+    display: inline-flex;
+    /* display: grid;
+    grid-template-columns: auto auto auto auto auto; */
+    list-style-type: none;
 }
 
 .float {
@@ -534,4 +573,22 @@ footer {
 .jssora051.jssora051ds {
     opacity: .3;
     pointer-events: none;
+}
+
+.admission {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    justify-items: center;
+    align-items: center;
+    background-color: #7a1786;
+    color: white;
+}
+
+.admission button {
+    background-color: #f58634;
+}
+
+.footer-links {
+    display: inherit;
+    align-content: space-evenly;
 }
