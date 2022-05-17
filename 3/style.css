@@ -5,6 +5,61 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.announcement {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: center;
+    padding: 10px;
+}
+
+.announcement-text {
+    background-color: orange;
+    height: 20px;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid orange;
+}
+
+div.scrolling-limit {
+    width: 50%;
+    height: 20px;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid orange;
+    /* border-radius: 10px; */
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.scrolling {
+    position: relative;
+    -webkit-animation: scroll 20s infinite linear;
+    ;
+    -moz-animation: scroll 20s infinite linear;
+    -o-animation: scroll 20s infinite linear;
+    animation: scroll 20s infinite linear;
+}
+
+@keyframes scroll {
+    0% {
+        left: 500px;
+    }
+    100% {
+        left: -950px;
+    }
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        left: 500px;
+    }
+    100% {
+        left: -950px;
+    }
+}
+
 nav {
     box-shadow: 0 5px 5px -2px rgb(0 0 0 / 20%);
 }
@@ -201,6 +256,12 @@ fieldset {
     .footer-1 {
         grid-template-columns: auto !important;
     }
+    .carousel {
+        width: 80% !important;
+    }
+    .announcement {
+        display: none;
+    }
 }
 
 .col-2 p {
@@ -219,35 +280,6 @@ fieldset {
 
 .col-2 img {
     width: 80%;
-}
-
-figure.snip1192 {
-    font-family: 'Raleway', Arial, sans-serif;
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
-    min-width: 220px;
-    max-width: 310px;
-    width: 100%;
-    color: #fff;
-    text-align: left;
-    box-shadow: none !important;
-}
-
-figure.snip1192 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-figure.snip1192 img {
-    max-width: 100%;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    display: inline-block;
-    z-index: 1;
-    position: relative;
 }
 
 blockquote {
@@ -283,25 +315,6 @@ blockquote:after {
     content: "\201D";
     right: 20px;
     bottom: 35px;
-}
-
-figure.snip1192 .author {
-    margin: 0;
-    text-transform: uppercase;
-    text-align: center;
-    color: black;
-}
-
-figure.snip1192 .author h5 {
-    opacity: 0.8;
-    margin: 0;
-    font-weight: 800;
-}
-
-figure.snip1192 .author h5 span {
-    font-weight: 400;
-    text-transform: none;
-    display: block;
 }
 
 .grid {
@@ -429,16 +442,6 @@ footer img {
 
 .my-float {
     margin-top: 22px;
-}
-
-.img-slider {
-    width: 100%;
-    position: relative;
-}
-
-.img-slider img {
-    width: 100%;
-    /* position: absolute; */
 }
 
 .wrapper {
