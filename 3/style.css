@@ -7,9 +7,19 @@
 
 .announcement {
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 60% 40%;
     align-items: center;
     padding: 10px;
+}
+
+.announcement-1 {
+    display: inline-flex;
+    justify-content: right;
+}
+
+.announcement-2 {
+    justify-content: right;
+    display: flex;
 }
 
 .announcement-text {
@@ -19,6 +29,10 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 1px solid orange;
+}
+
+.announcement i {
+    align-self: center;
 }
 
 div.scrolling-limit {
@@ -260,7 +274,16 @@ fieldset {
         width: 80% !important;
     }
     .announcement {
-        display: none;
+        grid-template-columns: 100% !important;
+    }
+    .announcement-1 {
+        justify-content: center;
+    }
+    .announcement-2 {
+        justify-content: center;
+    }
+    .group {
+        grid-template-columns: auto auto !important;
     }
 }
 
@@ -351,7 +374,7 @@ blockquote:after {
 
 .group {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
 }
 
