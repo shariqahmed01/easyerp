@@ -104,11 +104,10 @@ nav button {
     font-size: 15px;
 }
 
-.banner img {
-    width: 100%;
-    align-self: center;
-    /* height: 80vh;
-    background-image: url(images/banner.jpg); */
+.banner {
+    background-image: url(images/main\ banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     /* position: relative; */
 }
 
@@ -237,7 +236,7 @@ fieldset {
 
 .col-3 {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 20% 60% 20%;
     justify-items: center;
     align-items: center;
 }
@@ -345,7 +344,6 @@ blockquote:after {
     display: grid;
     justify-items: center;
     width: 100%;
-    background-color: #D51B40;
 }
 
 .testimonials {
