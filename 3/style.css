@@ -107,8 +107,12 @@ nav button {
 .banner {
     background-image: url(images/main\ banner.jpeg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     /* position: relative; */
+}
+
+.mobile img {
+    display: none;
 }
 
 .container {
@@ -283,6 +287,12 @@ fieldset {
     }
     .group {
         grid-template-columns: auto auto !important;
+    }
+    .mobile img {
+        display: block;
+    }
+    .banner {
+        background-image: url(images/mobile-wallpaper.jpg);
     }
 }
 
