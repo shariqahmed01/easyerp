@@ -105,14 +105,20 @@ nav button {
 }
 
 .banner {
-    background-image: url(images/main\ banner.jpeg);
+    /* background-image: url(images/main\ banner.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     /* position: relative; */
 }
 
-.mobile img {
+
+/* .mobile img {
     display: none;
+} */
+
+.mobile {
+    text-align: center;
+    align-self: center;
 }
 
 .container {
@@ -122,6 +128,10 @@ nav button {
     margin: 0 auto;
     right: 5%;
     align-self: center;
+}
+
+#contact span {
+    color: #FF4500;
 }
 
 #contact input[type="text"],
@@ -392,7 +402,7 @@ blockquote:after {
 }
 
 .awards p {
-    padding: 0 50px;
+    padding: 0 70px;
 }
 
 .row1 img {
@@ -607,6 +617,64 @@ footer img {
 .jssora051.jssora051ds {
     opacity: .3;
     pointer-events: none;
+}
+
+.fees {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fees-3 {
+    grid-template-columns: 33% 33% 33%;
+    display: grid;
+}
+
+.box {
+    padding: 30px;
+    min-height: 200px;
+    min-width: 200px;
+    background-color: gainsboro;
+    justify-self: center;
+    color: #79139a;
+}
+
+.box ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.box li {
+    padding: 5px;
+}
+
+.box button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #6F3984;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.box hr {
+    width: 100%;
+    background-color: rgb(152 150 150 / 35%);
+    border: 0;
+    height: 1px;
+    margin: 10px 0;
+}
+
+.box h3 {
+    font-size: 49px !important;
+    font-family: Arial !important;
+    font-weight: bold !important;
+}
+
+.box span {
+    color: #ff8728;
+    font-weight: bold;
 }
 
 .admission {
