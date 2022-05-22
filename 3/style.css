@@ -279,6 +279,7 @@ fieldset {
     }
     .grid {
         grid-template-columns: auto !important;
+        margin-top: 20px;
     }
     .card {
         width: 220px !important;
@@ -310,6 +311,7 @@ fieldset {
     }
     .fees-3 {
         grid-template-columns: auto !important;
+        gap: 2%;
     }
     .banner {
         background-image: url(images/mobile-wallpaper.jpg);
@@ -429,11 +431,13 @@ blockquote:after {
 .row1 {
     gap: 0;
     grid-template-columns: 50% 50%;
+    gap: 2%;
 }
 
 .row2 {
     gap: 0;
     grid-template-columns: 50% 50%;
+    gap: 2%;
 }
 
 .row2 img {
@@ -443,6 +447,7 @@ blockquote:after {
 .row3 {
     gap: 0;
     grid-template-columns: 50% 50%;
+    gap: 2%;
 }
 
 .row3 img {
