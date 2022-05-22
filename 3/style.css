@@ -20,6 +20,7 @@
 .announcement-2 {
     justify-content: right;
     display: flex;
+    margin: 0 20%;
 }
 
 .announcement-text {
@@ -105,10 +106,15 @@ nav button {
 }
 
 .banner {
-    /* background-image: url(images/main\ banner.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* position: relative; */
+    background-image: url(images/mobile-wallpaper.jpg);
+    background-size: contain;
+}
+
+.banner h1 {
+    color: #fff;
+    align-self: center;
+    padding: 50px;
+    text-align: center;
 }
 
 
@@ -117,7 +123,7 @@ nav button {
 } */
 
 .mobile {
-    text-align: center;
+    text-align: right;
     align-self: center;
 }
 
@@ -291,6 +297,7 @@ fieldset {
     }
     .announcement-1 {
         justify-content: center;
+        text-align: center;
     }
     .announcement-2 {
         justify-content: center;
@@ -298,8 +305,11 @@ fieldset {
     .group {
         grid-template-columns: auto auto !important;
     }
-    .mobile img {
-        display: block;
+    .mobile {
+        text-align: center !important;
+    }
+    .fees-3 {
+        grid-template-columns: auto !important;
     }
     .banner {
         background-image: url(images/mobile-wallpaper.jpg);
@@ -388,17 +398,24 @@ blockquote:after {
 
 .third {
     text-align: center;
+    margin-top: 30px;
 }
 
 .group {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: space-evenly;
+    justify-items: center;
+}
+
+.group img {
+    width: 50%;
 }
 
 .awards {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .awards p {
@@ -420,6 +437,15 @@ blockquote:after {
 }
 
 .row2 img {
+    border: 2px solid #79139a;
+}
+
+.row3 {
+    gap: 0;
+    grid-template-columns: 50% 50%;
+}
+
+.row3 img {
     border: 2px solid #79139a;
 }
 
@@ -624,6 +650,10 @@ footer img {
     margin-top: 20px;
 }
 
+.fees h1 {
+    padding: 20px;
+}
+
 .fees-3 {
     grid-template-columns: 33% 33% 33%;
     display: grid;
@@ -656,6 +686,7 @@ footer img {
     margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;
+    border-radius: 0.25rem;
 }
 
 .box hr {
