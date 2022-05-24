@@ -316,6 +316,14 @@ fieldset {
     .banner {
         background-image: url(images/mobile-wallpaper.jpg);
     }
+    .slides {
+        height: 250px !important;
+        width: 250px !important;
+    }
+    .slide {
+        height: 250px !important;
+        width: 250px !important;
+    }
 }
 
 .col-2 p {
