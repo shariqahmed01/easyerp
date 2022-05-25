@@ -5,6 +5,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
 .announcement {
     display: grid;
     grid-template-columns: 60% 40%;
