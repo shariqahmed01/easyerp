@@ -223,3 +223,80 @@ p {
     align-items: center;
     height: 100%;
 }
+
+.brands {
+    margin-top: 130px;
+    text-align: center;
+    background-color: #F4F6F5;
+    padding: 25px 0;
+}
+
+.brands img {
+    height: 60px;
+    width: auto;
+}
+
+.brands .flex {
+    flex-wrap: wrap;
+}
+
+.brands .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+    justify-content: space-evenly;
+}
+
+.brands .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.brands .card:hover {
+    transform: translateY(-15px);
+}
+
+@media screen and (max-width:430px) {
+    .card {
+        background-color: #fff;
+        color: #333;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+        padding: 10px;
+        margin: 10px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0 20px;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7))
+    }
+}
+
+.slider {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slide {
+    height: 100px;
+    width: 250px;
+    padding: 30px;
+}
