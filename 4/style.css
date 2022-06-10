@@ -5,6 +5,19 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+    background-color: #fff;
+}
+
 .slide-right {
     animation: 3s slide-right;
 }
@@ -53,6 +66,18 @@ li {
     padding: 50px 0;
     background-color: #1B3689;
     background-image: linear-gradient(#021B79, #0575E6);
+}
+
+@media screen and (max-width:600px) {
+    .main-container {
+        grid-template-columns: auto;
+    }
+    .slide-left {
+        animation: none;
+    }
+    .nav li {
+        display: none !important;
+    }
 }
 
 iframe {
@@ -195,8 +220,37 @@ button:hover {
 
 .challenges {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 30% 35% 35%;
     margin-top: 20px;
+}
+
+.challenges-content {
+    padding: 20px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+@media screen and (max-width:600px) {
+    .challenges {
+        grid-template-columns: auto;
+    }
+    .challenges-content {
+        padding-top: 0;
+        padding: 0;
+    }
+    .element {
+        display: none !important;
+    }
+    .element-image {
+        text-align: center;
+        float: none !important;
+    }
+    .element-image img {
+        padding-left: 0 !important;
+    }
+    .logo_image {
+        margin-left: 0 !important;
+    }
 }
 
 .challenges i {
@@ -634,6 +688,13 @@ p {
     border-radius: 20px;
 }
 
+@media screen and (max-width:600px) {
+    .mySlides img {
+        max-width: 220px;
+        width: 100%;
+    }
+}
+
 .stars i {
     color: #ffdc12;
 }
@@ -719,4 +780,44 @@ q {
 
 .author {
     color: #1B3689;
+}
+
+.served {
+    padding: 50px 0;
+}
+
+.served h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 40px;
+    gap: 10px;
+    justify-items: center;
+}
+
+@media screen and (max-width:650px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0 40px;
+        gap: 10px;
+    }
+    .grid-item {
+        min-width: 80%;
+    }
 }
